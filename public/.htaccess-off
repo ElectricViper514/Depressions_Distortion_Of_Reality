@@ -1,0 +1,30 @@
+# === DEVELOPMENT Environment .htaccess ===
+
+# Serve index.html by default
+DirectoryIndex index.html
+
+# Prevent directory listing (more secure than +Indexes)
+Options -Indexes
+
+# Basic security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Explicitly allow access to this directory
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+</IfModule>
+
+# === Hotlink Protection ===
+RewriteEngine on
+RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} !^([^.]+(?:\.[^.]+)*)@@https?://([^.]+\.)?\1/.* [NC]
+RewriteRule \.(gif|tiff|mpg|zip|mp3|psd|htm|jpg|png|avi|wma|rar|pdf|txt|php|jpeg|bmp|mpeg|mov|exe|swf|html)$ - [F,NC]
+
+# === End of File ===
