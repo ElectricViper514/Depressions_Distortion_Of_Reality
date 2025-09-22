@@ -304,10 +304,10 @@ nav a::after {
   transition: transform 0.3s, opacity 0.5s;
 }
 
-.blog-card--overcoming { background-image: url('../public/images/overcoming.jpg'); }
-.blog-card--coding-journey { background-image: url('../public/images/coding.jpg'); }
-.blog-card--gardening   { background-image: url('../public/images/gardening.jpg'); }
-.blog-card--cs50        { background-image: url('../public/images/cs50.jpg'); }
+.blog-card--overcoming { background-image: url('../images/overcoming.jpg'); }
+.blog-card--coding-journey { background-image: url('../images/coding.jpg'); }
+.blog-card--gardening   { background-image: url('../images/gardening.jpg'); }
+.blog-card--cs50        { background-image: url('../images/cs50.jpg'); }
 
 .blog-card.pre-animation {
   opacity: 0;
