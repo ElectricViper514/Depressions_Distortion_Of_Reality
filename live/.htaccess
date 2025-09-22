@@ -1,9 +1,0 @@
-Options +Indexes
-
-IndexOptions +HTMLTable +FancyIndexing
-
-#Begin hotlink protection
-RewriteEngine on
-RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} !^([^.]+(?:\.[^.]+)*)@@https?://([^.]+\.)?\1/.* [NC]
-RewriteRule \.(gif|tiff|mpg|zip|mp3|psd|htm|jpg|png|avi|wma|rar|pdf|txt|php|jpeg|bmp|mpeg|mov|exe|swf|html)$ - [F,NC]
-#End hotlink protection

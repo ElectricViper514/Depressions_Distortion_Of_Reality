@@ -5,212 +5,283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Depression's Distortion of Reality | Journey Through Healing & Coding</title>
+  <title>Depression’s Distortion of Reality | Journey Through Healing &amp; Coding</title>
+  <meta name="description" content="A personal journey overcoming depression through coding, gardening, faith, and lifelong learning." />
+  <meta property="og:title" content="Depression’s Distortion of Reality" />
+  <meta property="og:description" content="Follow my path through healing via code, nature, education, and faith." />
+  <meta property="og:image" content="https://www.DepressionsDistortionOfReality.com/assets/images/DDoR_Logo_Rectangle.png" />
+  <meta property="og:url" content="https://www.DepressionsDistortionOfReality.com" />
 
-  <!-- Main stylesheet -->
+  <link rel="preload" href="css/styles.css" as="style" />
   <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Font Awesome -->
-  <link 
-    rel="stylesheet" 
+  <link
+    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/Z4+tvYOcGfPW5PaaCaz5E0/jAP+q+1o+rb10ksuGUp4R2zYJwR7gRgk3hzkPyhO3Yg=="
-    crossorigin="anonymous" 
+    crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <div class="container header-container">
-      <div class="logo">
-        <img src="assets/images/DDoR-Logo-Round.png" alt="Depression's Distortion of Reality logo" />
-        <i class="fas fa-brain" aria-hidden="true"></i>
-        <span>Depression's Distortion of Reality</span>
-      </div>
-      <button class="mobile-menu" aria-label="Open navigation menu">
+      <a href="index.html" class="logo">
+        <img
+          src="assets/images/DDoR_Logo_Round.png"
+          alt="Depression’s Distortion of Reality logo"
+          class="site-logo"
+        />
+        <span>Depression’s Distortion of Reality</span>
+      </a>
+      <button
+        id="mobile-menu-btn"
+        class="mobile-menu"
+        aria-label="Toggle navigation"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+      >
         <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul id="nav-menu">
-          <li><a href="#"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
-          <li><a href="#"><i class="fas fa-book" aria-hidden="true"></i> Blog</a></li>
-          <li><a href="#"><i class="fas fa-code" aria-hidden="true"></i> Coding Journey</a></li>
-          <li><a href="#"><i class="fas fa-seedling" aria-hidden="true"></i> Gardening</a></li>
-          <li><a href="#"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Back to School</a></li>
-          <li><a href="#"><i class="fas fa-mind" aria-hidden="true"></i> Mental Health</a></li>
-          <li><a href="#"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
+          <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="blog.html"><i class="fas fa-book" aria-hidden="true"></i> Blog</a></li>
+          <li><a href="journey.html"><i class="fas fa-code" aria-hidden="true"></i> Coding Journey</a></li>
+          <li><a href="gardening.html"><i class="fas fa-seedling" aria-hidden="true"></i> Gardening</a></li>
+          <li><a href="school.html"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Back to School</a></li>
+          <li><a href="mental-health.html"><i class="fas fa-brain" aria-hidden="true"></i> Mental Health</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>Finding Clarity Through Code, Nature, Learning &amp; God</h1>
-      <p>A personal journey of overcoming depression, discovering programming, cultivating gardens, pursuing computer science, and learning to walk with God at nearly 50.</p>
-      <div class="btn-container">
-        <a href="#" class="btn">Read My Story</a>
-        <a href="#" class="btn btn-outline">Latest Posts</a>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Finding Clarity Through Code, Nature, Learning &amp; God</h1>
+        <p>
+          A personal journey of overcoming depression, discovering programming,
+          cultivating gardens, pursuing computer science, and learning to walk
+          with God at nearly 50.
+        </p>
+        <div class="btn-container">
+          <a href="#about" class="btn">Read My Story</a>
+          <a href="#recent-articles" class="btn btn-outline">Latest Posts</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Featured Blog Posts -->
-  <section class="blog-section">
-    <div class="container">
-      <h2 class="section-title">Recent Articles</h2>
-      <div class="blog-container">
-
-        <!-- Post 1 -->
-        <article class="blog-card overcoming-img pre-animation" role="img" aria-label="Sunset over a mountain range">
-          <div class="card-content">
-            <div class="card-meta">
-              <span><i class="far fa-calendar" aria-hidden="true"></i> August 8, 2025</span>
-              <span><i class="far fa-comment" aria-hidden="true"></i> 12 Comments</span>
-            </div>
-            <h3>Overcoming Depression: My Journey</h3>
-            <p class="excerpt">A deep dive into my personal battle with depression and how I found hope while renewing my faith.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </article>
-
-        <!-- Post 2 -->
-        <article class="blog-card coding-journey-img pre-animation" role="img" aria-label="Person coding at a laptop">
-          <div class="card-content">
-            <div class="card-meta">
-              <span><i class="far fa-calendar" aria-hidden="true"></i> June 15, 2023</span>
-              <span><i class="far fa-comment" aria-hidden="true"></i> 12 Comments</span>
-            </div>
-            <h3>How Learning to Code Helped Me Rewire My Brain</h3>
-            <p class="excerpt">Discovering programming gave me a new framework for problem-solving that extended far beyond the computer screen.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </article>
-
-        <!-- Post 3 -->
-        <article class="blog-card gardening-img pre-animation" role="img" aria-label="Hands planting seedlings in soil">
-          <div class="card-content">
-            <div class="card-meta">
-              <span><i class="far fa-calendar" aria-hidden="true"></i> June 8, 2023</span>
-              <span><i class="far fa-comment" aria-hidden="true"></i> 8 Comments</span>
-            </div>
-            <h3>The Healing Power of Gardening: My Therapy in the Soil</h3>
-            <p class="excerpt">How tending to plants became a powerful metaphor for nurturing my own mental health journey.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </article>
-
-        <!-- Post 4 -->
-        <article class="blog-card cs50-img pre-animation" role="img" aria-label="Person studying at a computer with coffee cup">
-          <div class="card-content">
-            <div class="card-meta">
-              <span><i class="far fa-calendar" aria-hidden="true"></i> June 1, 2023</span>
-              <span><i class="far fa-comment" aria-hidden="true"></i> 15 Comments</span>
-            </div>
-            <h3>Embracing Computer Science at 50: It's Never Too Late</h3>
-            <p class="excerpt">Why returning to school in my fifth decade has been the most empowering decision I've ever made.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </article>
-
+    <section class="blog-section" aria-labelledby="recent-articles">
+      <div class="container">
+        <h2 id="recent-articles" class="section-title">Recent Articles</h2>
+        <div class="blog-container">
+          <article class="blog-card blog-card--overcoming pre-animation">
+            <a href="overcoming-depression.html">
+              <div class="card-content">
+                <div class="card-meta">
+                  <span aria-label="Published August 8, 2025">
+                    <i class="far fa-calendar" aria-hidden="true"></i> August 8, 2025
+                  </span>
+                  <span aria-label="12 comments">
+                    <i class="far fa-comment" aria-hidden="true"></i> 12 Comments
+                  </span>
+                </div>
+                <h3>Overcoming Depression: My Journey</h3>
+                <p class="excerpt">
+                  A deep dive into my personal battle with depression and how I
+                  found hope while renewing my faith.
+                </p>
+                <span class="read-more">
+                  Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+          <article class="blog-card blog-card--coding-journey pre-animation">
+            <a href="how-learning-to-code.html">
+              <div class="card-content">
+                <div class="card-meta">
+                  <span aria-label="Published June 15, 2023">
+                    <i class="far fa-calendar" aria-hidden="true"></i> June 15, 2023
+                  </span>
+                  <span aria-label="12 comments">
+                    <i class="far fa-comment" aria-hidden="true"></i> 12 Comments
+                  </span>
+                </div>
+                <h3>How Learning to Code Helped Me Rewire My Brain</h3>
+                <p class="excerpt">
+                  Discovering programming gave me a new framework for
+                  problem-solving that extended far beyond the computer screen.
+                </p>
+                <span class="read-more">
+                  Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+          <article class="blog-card blog-card--gardening pre-animation">
+            <a href="healing-power-of-gardening.html">
+              <div class="card-content">
+                <div class="card-meta">
+                  <span aria-label="Published June 8, 2023">
+                    <i class="far fa-calendar" aria-hidden="true"></i> June 8, 2023
+                  </span>
+                  <span aria-label="8 comments">
+                    <i class="far fa-comment" aria-hidden="true"></i> 8 Comments
+                  </span>
+                </div>
+                <h3>The Healing Power of Gardening: My Therapy in the Soil</h3>
+                <p class="excerpt">
+                  How tending to plants became a powerful metaphor for nurturing
+                  my own mental health journey.
+                </p>
+                <span class="read-more">
+                  Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+          <article class="blog-card blog-card--cs50 pre-animation">
+            <a href="embracing-cs-at-50.html">
+              <div class="card-content">
+                <div class="card-meta">
+                  <span aria-label="Published June 1, 2023">
+                    <i class="far fa-calendar" aria-hidden="true"></i> June 1, 2023
+                  </span>
+                  <span aria-label="15 comments">
+                    <i class="far fa-comment" aria-hidden="true"></i> 15 Comments
+                  </span>
+                </div>
+                <h3>Embracing Computer Science at 50: It's Never Too Late</h3>
+                <p class="excerpt">
+                  Why returning to school in my fifth decade has been the most
+                  empowering decision I've ever made.
+                </p>
+                <span class="read-more">
+                  Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Categories -->
-  <section class="categories">
-    <div class="container">
-      <h2 class="section-title">Explore Topics</h2>
-      <div class="categories-container">
-        <div class="category-card"><i class="fas fa-laptop-code" aria-hidden="true"></i><h3>Coding Journey</h3><p>My path from beginner to aspiring developer</p></div>
-        <div class="category-card"><i class="fas fa-heart" aria-hidden="true"></i><h3>Mental Health</h3><p>Personal experiences with depression and recovery</p></div>
-        <div class="category-card"><i class="fas fa-seedling" aria-hidden="true"></i><h3>Gardening</h3><p>Therapeutic horticulture and sustainable living</p></div>
-        <div class="category-card"><i class="fas fa-graduation-cap" aria-hidden="true"></i><h3>Back to School</h3><p>Pursuing a CS degree later in life</p></div>
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">My Journey</h2>
+      <div class="container about-container">
+        <div class="about-img">
+          <picture>
+            <source srcset="assets/images/about-me.webp" type="image/webp" />
+            <img
+              src="assets/images/about-me.jpg"
+              alt="Portrait of the author smiling"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="about-content">
+          <p>
+            Hello, I'm a 49-year-old computer science student, aspiring
+            developer, and mental health advocate. After decades of struggling
+            with depression, I discovered that coding, gardening, and continuous
+            learning became powerful tools in my healing process.
+          </p>
+          <p>
+            This blog documents my journey of overcoming depression's distorted
+            reality through faith, creative expression, nature, and technology.
+            I share my experiences learning to walk in faith, cultivating my
+            garden, and returning to school to pursue my passion for computer
+            science.
+          </p>
+          <p>
+            My goal is to inspire others who may be facing similar challenges
+            and to demonstrate that it's never too late to pursue your dreams
+            and rewrite your story.
+          </p>
+          <a href="about.html" class="btn">Read My Full Story</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container about-container">
-      <div class="about-img">
-        <img src="assets/images/about-me.jpg" alt="Portrait of the site author smiling" />
-      </div>
-      <div class="about-content">
-        <h2>My Journey</h2>
-        <p>Hello, I'm a 49-year-old computer science student, aspiring developer, and mental health advocate. After decades of struggling with depression, I discovered that coding, gardening, and continuous learning became powerful tools in my healing process.</p>
-        <p>This blog documents my journey of overcoming depression's distorted reality through faith, creative expression, nature, and technology. I share my experiences learning to walk in faith, cultivating my garden, and returning to school to pursue my passion for computer science.</p>
-        <p>My goal is to inspire others who may be facing similar challenges and to demonstrate that it's never too late to pursue your dreams and rewrite your story.</p>
-        <a href="#" class="btn">Read My Full Story</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-container">
-        <div class="footer-col">
-          <h3>Depression's Distortion of Reality</h3>
-          <p>A personal blog about overcoming depression through coding, gardening, and education.</p>
+        <section class="footer-col" aria-labelledby="footer-about">
+          <h3 id="footer-about">Depression’s Distortion of Reality</h3>
+          <p>
+            A personal blog about overcoming depression through coding,
+            gardening, and education.
+          </p>
           <div class="social-links">
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter" title="Follow on Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Facebook" title="Follow on Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Instagram" title="Follow on Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="GitHub" title="Follow on GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" title="Follow on LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
           </div>
-        </div>
+        </section>
 
-        <div class="footer-col">
+        <nav class="footer-col" aria-label="Quick Links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Coding Resources</a></li>
-            <li><a href="#">Gardening Tips</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Coding Resources</a></li>
+            <li><a href="gardening.html">Gardening Tips</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="footer-col">
+        <nav class="footer-col" aria-label="Footer Categories">
           <h3>Categories</h3>
           <ul>
-            <li><a href="#">Mental Health Journey</a></li>
-            <li><a href="#">Programming &amp; Development</a></li>
-            <li><a href="#">Gardening &amp; Nature Therapy</a></li>
-            <li><a href="#">Education &amp; Learning</a></li>
-            <li><a href="#">Personal Growth</a></li>
+            <li><a href="mental-health.html">Mental Health Journey</a></li>
+            <li><a href="journey.html">Programming &amp; Development</a></li>
+            <li><a href="gardening.html">Gardening &amp; Nature Therapy</a></li>
+            <li><a href="school.html">Education &amp; Learning</a></li>
+            <li><a href="growth.html">Personal Growth</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="footer-col">
-          <h3>Newsletter</h3>
+        <section class="footer-col" aria-labelledby="footer-newsletter">
+          <h3 id="footer-newsletter">Newsletter</h3>
           <p>Subscribe to get updates on my journey and new posts.</p>
-          <form action="#" method="post">
+          <form action="/subscribe" method="post" novalidate>
             <label for="newsletter-email" class="visually-hidden">Email address</label>
-            <input 
-              type="email" 
-              id="newsletter-email" 
-              name="email" 
-              placeholder="Your Email" 
-              class="newsletter-input" 
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Your Email"
               required
+              aria-describedby="email-help"
             />
+            <small id="email-help" class="visually-hidden">
+              Enter a valid email address to subscribe
+            </small>
             <button type="submit" class="btn">Subscribe</button>
           </form>
-        </div>
+        </section>
       </div>
-
       <div class="copyright">
-        <p>&copy; 2023 Depression's Distortion of Reality. All rights reserved.</p>
+        <p>&copy; 2025 Depression’s Distortion of Reality. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
