@@ -1,4 +1,4 @@
-# === STAGING Environment .htaccess ===
+# === DEVELOPMENT Environment .htaccess ===
 
 # Serve index.html by default
 DirectoryIndex index.html
